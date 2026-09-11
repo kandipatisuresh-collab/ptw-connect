@@ -7,7 +7,7 @@ ENV VITE_API_BASE_URL=${VITE_API_BASE_URL}
 ENV VITE_USE_MOCK_IDENTITY=${VITE_USE_MOCK_IDENTITY}
 ENV VITE_MOCK_USER=${VITE_MOCK_USER}
 COPY package*.json ./
-RUN npm ci
+RUN npm install --no-audit --no-fund
 COPY . .
 RUN npm run build
 
