@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600&display=swap');
+
+:root {
+  color: #102a43;
+  background: #eef3f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; min-width: 320px; }
+
+.app-shell {
+  min-height: 100vh;
+  background:
+    linear-gradient(135deg, rgba(31, 78, 95, 0.08), transparent 34%),
+    linear-gradient(315deg, rgba(217, 119, 6, 0.08), transparent 32%),
+    #eef3f5;
+}
+
+.top-bar { background: #102a43 !important; }
+.top-bar__inner { min-height: 72px !important; }
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 8px;
+  color: #fef3c7;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.brand-name { color: #fff; font-weight: 600 !important; }
+.brand-caption { color: rgba(255,255,255,0.65); }
+.status-chip { color: #fff !important; border-color: rgba(255,255,255,0.4) !important; }
+.status-chip .MuiChip-icon { color: #fef3c7; }
+
+.page-container { padding-top: 48px; padding-bottom: 56px; }
+.hero-block { max-width: 760px; padding: 20px 0 4px; }
+.eyebrow { color: #b45309; font-weight: 700 !important; letter-spacing: 0.14em !important; }
+.hero-title { margin-top: 8px !important; color: #102a43; font-size: clamp(2.1rem, 5vw, 4.3rem) !important; line-height: 1.05 !important; }
+.hero-copy { max-width: 620px; margin-top: 20px !important; color: #486581; font-size: 1.1rem !important; line-height: 1.65 !important; }
+.safety-banner { border: 1px solid #f0b429; background: #fff8e1 !important; color: #7c4a03 !important; }
+.status-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 20px; }
+.status-panel, .next-panel { border: 1px solid #d9e2ec; padding: 24px; }
+.status-panel--accent { background: #e5eef1; border-color: #b8cbd2; }
+.panel-heading { color: #1f4e5f; }
+.next-panel { background: #fff; }
+
+@media (max-width: 720px) {
+  .page-container { padding-top: 28px; }
+  .top-bar__inner { min-height: 64px !important; }
+  .status-grid { grid-template-columns: 1fr; }
+  .status-chip { display: none; }
+}
