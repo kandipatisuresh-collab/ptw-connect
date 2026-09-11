@@ -1,0 +1,40 @@
+# Java and build output
+target/
+*.class
+*.jar
+.gradle/
+build/
+
+# Node.js and frontend output
+node_modules/
+dist/
+coverage/
+
+# Python/editor environment artifacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.local
+*.log
+*.log.*
+*.pem
+*.key
+*.crt
+
+# IDE and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+
+# Local infrastructure overrides
+docker-compose.override.yml

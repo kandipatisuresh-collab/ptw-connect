@@ -1,0 +1,31 @@
+# Dependencies and build output
+node_modules/
+dist/
+build/
+target/
+.gradle/
+coverage/
+*.class
+*.jar
+
+# Local configuration and secrets
+.env*
+*.log
+*.log*
+*.secret.yaml
+secrets/
+*.key
+*.crt
+
+# Repository and editor metadata
+.git/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+
+# Docker metadata
+Dockerfile*
+.dockerignore
