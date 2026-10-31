@@ -1,0 +1,2 @@
+export function permitsToExpire(permits, now = new Date()) { return permits.filter((permit) => ['ISSUED', 'ACTIVE', 'SUSPENDED', 'RESUMED'].includes(permit.status) && new Date(permit.plannedEnd) <= now); }
+//# sourceMappingURL=permit-expiry-service.js.map

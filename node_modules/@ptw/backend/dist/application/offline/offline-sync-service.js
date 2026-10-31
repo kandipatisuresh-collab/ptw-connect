@@ -1,0 +1,2 @@
+export function synchronize(actions, currentVersions, expectedVersions) { return actions.map((action) => currentVersions.get(action.permitId) !== expectedVersions.get(action.permitId) ? { id: action.id, state: 'CONFLICT', reason: 'Permit changed while offline.' } : { id: action.id, state: 'APPLIED' }); }
+//# sourceMappingURL=offline-sync-service.js.map

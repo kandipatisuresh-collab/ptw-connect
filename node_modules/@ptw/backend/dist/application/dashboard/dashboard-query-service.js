@@ -1,0 +1,2 @@
+export function dashboardSummary(permits) { return permits.reduce((summary, permit) => { summary.total = (summary.total ?? 0) + 1; summary[permit.status] = (summary[permit.status] ?? 0) + 1; return summary; }, {}); }
+//# sourceMappingURL=dashboard-query-service.js.map

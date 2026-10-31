@@ -1,0 +1,2 @@
+export const permitEventTemplates = { submitted: 'Permit submitted for review', approved: 'Permit approved', issued: 'Permit issued', suspended: 'Permit suspended', resumed: 'Permit resumed', expired: 'Permit expired', closed: 'Permit closed' };
+//# sourceMappingURL=permit-events.js.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"safety-schemas.js","sourceRoot":"","sources":["../../../src/api/safety/safety-schemas.ts"],"names":[],"mappings":"AAEA,MAAM,UAAU,aAAa,CAAC,KAA8B,EAAE,MAAyB,IAAU,KAAK,MAAM,KAAK,IAAI,MAAM;IAAE,IAAI,KAAK,CAAC,KAAK,CAAC,KAAK,SAAS,IAAI,KAAK,CAAC,KAAK,CAAC,KAAK,IAAI;QAAE,MAAM,IAAI,KAAK,CAAC,GAAG,KAAK,eAAe,CAAC,CAAC,CAAC,CAAC"}

@@ -1,0 +1,2 @@
+export function permitReport(permits) { return permits.map((permit) => ({ permitNumber: permit.permitNumber, status: permit.status, plant: permit.scope.plantId, area: permit.scope.areaId, risk: 'Configured by assessment' })); }
+//# sourceMappingURL=report-service.js.map

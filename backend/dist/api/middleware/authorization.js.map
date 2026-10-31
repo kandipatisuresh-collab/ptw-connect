@@ -1,0 +1,1 @@
+{"version":3,"file":"authorization.js","sourceRoot":"","sources":["../../../src/api/middleware/authorization.ts"],"names":[],"mappings":"AAEA,MAAM,UAAU,eAAe,CAAC,MAA8G,EAAE,aAAqB;IACnK,OAAO,EAAE,MAAM,EAAE,MAAM,CAAC,OAAO,EAAE,KAAK,EAAE,MAAM,CAAC,KAAK,EAAE,QAAQ,EAAE,MAAM,CAAC,QAAQ,EAAE,OAAO,EAAE,MAAM,CAAC,OAAO,EAAE,aAAa,EAAE,CAAC;AAC5H,CAAC"}

@@ -1,0 +1,3 @@
+import { calculateRisk } from '../../domain/safety/risk-matrix.js';
+export function requiredApprovalRoles(likelihood, severity) { const risk = calculateRisk(likelihood, severity); return risk.requiresAdditionalApproval ? ['Maintenance Supervisor', 'Area Authority', 'Safety Officer', 'Permit Issuer'] : ['Maintenance Supervisor', 'Area Authority', 'Permit Issuer']; }
+//# sourceMappingURL=approval-planner.js.map

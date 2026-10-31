@@ -1,0 +1,2 @@
+export function sourceSnapshot(reference) { return { objectType: reference.objectType, businessId: reference.businessId, description: reference.description, sourceTimestamp: reference.sourceTimestamp, attributes: { ...reference.attributes } }; }
+//# sourceMappingURL=source-mappers.js.map

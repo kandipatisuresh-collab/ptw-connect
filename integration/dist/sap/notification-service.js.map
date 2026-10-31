@@ -1,0 +1,1 @@
+{"version":3,"file":"notification-service.js","sourceRoot":"","sources":["../../src/sap/notification-service.ts"],"names":[],"mappings":"AAGA,MAAM,OAAO,sBAAsB;IACG;IAApC,YAAoC,GAAe;QAAf,QAAG,GAAH,GAAG,CAAY;IAAG,CAAC;IACvD,MAAM,CAAC,QAA2B,IAAsC,OAAO,IAAI,CAAC,GAAG,CAAC,mBAAmB,CAAC,QAAQ,CAAC,CAAC,CAAC,CAAC;CACzH"}
