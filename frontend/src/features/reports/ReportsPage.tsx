@@ -1,0 +1,1 @@
+export function ReportsPage({ rows }: { rows: readonly { label: string; value: number }[] }) { return <section><h1>Permit reports</h1><table><tbody>{rows.map((row) => <tr key={row.label}><th>{row.label}</th><td>{row.value}</td></tr>)}</tbody></table></section>; }

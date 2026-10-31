@@ -1,0 +1,2 @@
+export interface QueuedAction { id: string; permitId: string; type: string; payload: Record<string, unknown>; createdAt: string; }
+export class OfflineStore { private readonly queue: QueuedAction[] = []; enqueue(action: QueuedAction): void { if (!this.queue.some((item) => item.id === action.id)) this.queue.push(action); } pending(): readonly QueuedAction[] { return this.queue; } acknowledge(id: string): void { const index = this.queue.findIndex((item) => item.id === id); if (index >= 0) this.queue.splice(index, 1); } }

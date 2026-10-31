@@ -1,0 +1,1 @@
+export function ApprovalQueuePage({ approvals }: { approvals: readonly { id: string; requiredRole: string; decision?: string }[] }) { return <section><h2>Approval queue</h2>{approvals.map((approval) => <article key={approval.id}><strong>{approval.requiredRole}</strong><span>{approval.decision ?? 'Pending'}</span><button type="button">Review</button></article>)}</section>; }

@@ -1,0 +1,2 @@
+import { Isolation } from '../../domain/isolation/isolation.js';
+export class IsolationRepository { private readonly values = new Map<string, Isolation>(); save(value: Isolation): Isolation { this.values.set(value.id, value); return value; } get(id: string): Isolation | undefined { return this.values.get(id); } forPermit(permitId: string): readonly Isolation[] { return [...this.values.values()].filter((value) => value.permitId === permitId); } }

@@ -1,0 +1,2 @@
+export type PermitDraft = { permitTypeId: string; title: string; workDescription: string; plantId: string; areaId: string; plannedStart: string; plannedEnd: string };
+export async function createPermit(input: PermitDraft, headers: HeadersInit): Promise<unknown> { const response = await fetch('/api/permits', { method: 'POST', headers: { ...headers, 'content-type': 'application/json' }, body: JSON.stringify(input) }); if (!response.ok) throw new Error('Permit could not be saved.'); return response.json(); }

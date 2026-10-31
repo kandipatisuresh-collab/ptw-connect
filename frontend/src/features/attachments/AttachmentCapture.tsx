@@ -1,0 +1,1 @@
+export function AttachmentCapture({ onSelect }: { onSelect: (file: File) => void }) { return <label>Upload evidence<input type="file" accept="application/pdf,image/jpeg,image/png" onChange={(event) => { const file = event.target.files?.[0]; if (file) onSelect(file); }} /></label>; }

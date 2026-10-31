@@ -1,0 +1,2 @@
+import { Approval } from '../../domain/approval/approval.js';
+export class ApprovalRepository { private readonly values = new Map<string, Approval>(); save(value: Approval): Approval { this.values.set(value.id, value); return value; } get(id: string): Approval | undefined { return this.values.get(id); } forPermit(permitId: string): readonly Approval[] { return [...this.values.values()].filter((value) => value.permitId === permitId); } }

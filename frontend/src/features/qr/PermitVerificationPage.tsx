@@ -1,0 +1,1 @@
+export function PermitVerificationPage({ permit }: { permit: { permitNumber: string; status: string; workDescription: string } }) { return <main><p>{permit.permitNumber}</p><h1>Permit verification</h1><strong>{permit.status}</strong><p>{permit.workDescription}</p></main>; }

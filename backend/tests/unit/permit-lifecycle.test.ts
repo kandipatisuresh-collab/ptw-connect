@@ -1,0 +1,1 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; import { allowedTransitions } from '../../src/domain/workflow/workflow-service.js'; test('active permits may be suspended or closed pending', () => assert.deepEqual(allowedTransitions('ACTIVE'), ['SUSPENDED', 'CLOSURE_PENDING', 'EXPIRED']));

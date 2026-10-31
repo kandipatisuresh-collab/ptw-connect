@@ -1,0 +1,8 @@
+metrics:
+  - ptw_http_requests_total
+  - ptw_lifecycle_transitions_total
+  - ptw_sap_integration_failures_total
+alerts:
+  - name: integration-failure-rate
+    threshold: 5
+    window: 5m

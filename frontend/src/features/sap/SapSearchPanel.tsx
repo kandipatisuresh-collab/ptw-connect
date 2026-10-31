@@ -1,0 +1,1 @@
+export function SapSearchPanel({ onSearch }: { onSearch: (query: string) => void }) { return <form onSubmit={(event) => { event.preventDefault(); onSearch(new FormData(event.currentTarget).get('query')?.toString() ?? ''); }}><label>Maintenance reference<input name="query" /></label><button type="submit">Search SAP</button></form>; }

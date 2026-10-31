@@ -1,0 +1,3 @@
+import { Attachment, validateAttachment } from '../../domain/attachments/attachment.js';
+import { ScanningPort, StoragePort } from '../ports/index.js';
+export class AttachmentService { public constructor(private readonly storage: StoragePort, private readonly scanner: ScanningPort) {} async upload(input: Omit<Attachment, 'id' | 'reference' | 'scanState'> & { bytes: Uint8Array }): Promise<Attachment> { validateAttachment(input); const stored = await this.storage.put({ name: input.name, contentType: input.contentType, bytes: input.bytes }); return { ...input, id: crypto.randomUUID(), reference: stored.reference, scanState: await this.scanner.scan(stored.reference) }; } }

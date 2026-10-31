@@ -1,0 +1,1 @@
+export function PermitHistoryPanel({ entries }: { entries: readonly { action: string; occurredAt: string; actorId: string }[] }) { return <section><h2>Permit history</h2><ol>{entries.map((entry) => <li key={`${entry.occurredAt}-${entry.action}`}><strong>{entry.action}</strong> by {entry.actorId} at {entry.occurredAt}</li>)}</ol></section>; }

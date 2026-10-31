@@ -1,0 +1,2 @@
+import { Permit } from '../../domain/permits/permit.js';
+export function searchPermits(permits: readonly Permit[], query: string): readonly Permit[] { const normalized = query.trim().toLowerCase(); if (!normalized) return permits; return permits.filter((permit) => [permit.permitNumber, permit.title, permit.workDescription, permit.scope.plantId, permit.scope.areaId].some((value) => value.toLowerCase().includes(normalized))); }

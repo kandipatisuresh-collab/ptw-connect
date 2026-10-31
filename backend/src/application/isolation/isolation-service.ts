@@ -1,0 +1,3 @@
+import { Isolation, IsolationStatus, transitionIsolation } from '../../domain/isolation/isolation.js';
+import { IsolationRepository } from '../../infrastructure/database/isolation-repository.js';
+export class IsolationService { public constructor(private readonly repository: IsolationRepository) {} transition(id: string, next: IsolationStatus): Isolation { const value = this.repository.get(id); if (!value) throw new Error('Isolation not found.'); return this.repository.save(transitionIsolation(value, next)); } list(permitId: string): readonly Isolation[] { return this.repository.forPermit(permitId); } }

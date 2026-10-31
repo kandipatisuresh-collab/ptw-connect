@@ -1,0 +1,2 @@
+import { PermitStatusBadge } from './PermitStatusBadge.js';
+export function PermitListPage({ permits }: { permits: readonly { permitNumber: string; title: string; status: string }[] }) { return <section aria-label="Permit list">{permits.map((permit) => <article key={permit.permitNumber}><strong>{permit.permitNumber}</strong><h2>{permit.title}</h2><PermitStatusBadge status={permit.status} /></article>)}</section>; }

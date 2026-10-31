@@ -1,0 +1,2 @@
+import { PermitLifecycleActions } from './PermitLifecycleActions.js';
+export function ActivePermitPage({ permit, onAction }: { permit: { permitNumber: string; status: string; title: string }; onAction: (action: string) => void }) { return <main><p>{permit.permitNumber}</p><h1>{permit.title}</h1><strong>{permit.status}</strong><PermitLifecycleActions status={permit.status} onAction={onAction} /></main>; }

@@ -1,0 +1,1 @@
+export function MaintenanceReferenceCard({ reference }: { reference: { objectType: string; businessId: string; description: string } }) { return <article><strong>{reference.objectType}: {reference.businessId}</strong><p>{reference.description}</p><small>Source values are read-only.</small></article>; }

@@ -1,0 +1,1 @@
+export function IsolationPanel({ status }: { status: string }) { return <section><h2>Isolation verification</h2><p>Current state: <strong>{status}</strong></p><button type="button">Record verification</button></section>; }

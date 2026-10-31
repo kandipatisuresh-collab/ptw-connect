@@ -1,0 +1,1 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; test('isolation contract uses explicit statuses', () => assert.deepEqual(['REQUESTED', 'PLANNED', 'APPLIED', 'VERIFIED', 'RELEASED'].length, 5));

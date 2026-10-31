@@ -1,0 +1,1 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; import { sanitizeMetadata } from '../../src/infrastructure/observability/logger.js'; test('redacts credentials from metadata', () => assert.equal(sanitizeMetadata({ token: 'secret', event: 'x' }).token, '[REDACTED]'));

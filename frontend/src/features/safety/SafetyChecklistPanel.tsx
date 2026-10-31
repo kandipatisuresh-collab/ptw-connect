@@ -1,0 +1,1 @@
+export function SafetyChecklistPanel({ items }: { items: readonly string[] }) { return <section><h2>Safety checklist</h2>{items.map((item) => <label key={item}><input type="checkbox" />{item}</label>)}</section>; }

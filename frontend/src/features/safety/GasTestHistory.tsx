@@ -1,0 +1,1 @@
+export function GasTestHistory({ tests }: { tests: readonly { testedAt: string; passed: boolean }[] }) { return <section><h2>Gas test history</h2><ul>{tests.map((test) => <li key={test.testedAt}>{test.testedAt}: {test.passed ? 'Passed' : 'Warning'}</li>)}</ul></section>; }

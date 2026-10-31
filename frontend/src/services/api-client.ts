@@ -1,0 +1,1 @@
+export async function apiRequest<T>(input: RequestInfo | URL, init?: RequestInit): Promise<T> { const response = await fetch(input, init); if (!response.ok) { const body = await response.json().catch(() => ({})); throw new Error(typeof body.message === 'string' ? body.message : 'Request failed.'); } return response.json() as Promise<T>; }

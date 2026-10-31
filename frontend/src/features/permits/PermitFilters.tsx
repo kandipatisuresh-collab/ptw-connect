@@ -1,0 +1,1 @@
+export function PermitFilters({ value, onChange }: { value: string; onChange: (value: string) => void }) { return <label>Search permits<input value={value} onChange={(event) => onChange(event.target.value)} placeholder="Permit, order, equipment, area" /></label>; }

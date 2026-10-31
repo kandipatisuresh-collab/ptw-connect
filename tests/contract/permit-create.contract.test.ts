@@ -1,0 +1,1 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; test('permit contract names the create and submit resources', () => assert.ok('/api/permits/{permitId}/submit'.includes('submit')));

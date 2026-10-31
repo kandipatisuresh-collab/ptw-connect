@@ -1,0 +1,3 @@
+import { Approval, ApprovalDecision, decideApproval } from '../../domain/approval/approval.js';
+import { ApprovalRepository } from '../../infrastructure/database/approval-repository.js';
+export class ApprovalService { public constructor(private readonly repository: ApprovalRepository) {} decide(id: string, actorId: string, roles: readonly string[], decision: ApprovalDecision, comments: string): Approval { const value = this.repository.get(id); if (!value) throw new Error('Approval not found.'); return this.repository.save(decideApproval(value, actorId, roles, decision, comments)); } list(permitId: string): readonly Approval[] { return this.repository.forPermit(permitId); } }

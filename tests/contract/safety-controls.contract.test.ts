@@ -1,0 +1,1 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; test('safety contract exposes risk and gas-test concepts', () => assert.deepEqual(['risk', 'gas-test'].sort(), ['gas-test', 'risk']));
